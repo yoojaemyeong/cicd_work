@@ -4,5 +4,5 @@ jobs:
   hi:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd;date 
+      - run: pwd;date;ls /home
       - uses: actions/checkout@v4
