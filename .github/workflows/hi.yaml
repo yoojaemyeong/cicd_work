@@ -1,0 +1,8 @@
+name: hi
+on: push
+jobs:
+  hi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hi !!!"
+      - uses: actions/checkout@v4
