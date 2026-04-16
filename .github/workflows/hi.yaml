@@ -13,7 +13,7 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.SLACK_BOT_TOKEN }}" \
             -H "Content-type: application/json" \
             --data "{
-              \"channel\": \"#deploy\",
+              \"channel\": \"#jenkins-deploy-notice\",
               \"text\": \"✅ 배포 성공!\"
               }"
 
@@ -24,6 +24,6 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.SLACK_BOT_TOKEN }}" \
             -H "Content-type: application/json" \
             --data "{
-              \"channel\": \"#deploy\",
+              \"channel\": \"#jenkins-deploy-notice\",
               \"text\": \"❌ 배포 실패!\"
               }"
