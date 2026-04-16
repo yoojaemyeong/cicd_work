@@ -4,5 +4,5 @@ jobs:
   hi:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hi !!!"
+      - run: echo "hi !!!"  |  tee README.md 
       - uses: actions/checkout@v4
